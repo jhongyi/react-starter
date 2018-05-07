@@ -25,7 +25,15 @@ const routesConfig = [
       loading: () => <div>loading...</div>
     }),
     exact: true
-  }
+  },
+  {
+    name: 'NotFound',
+    path: null,
+    component: Loadable({
+      loader: () => import('~~components/NotFound'),
+      loading: () => <div>loading...</div>
+    })
+  },
 ];
 
 const Routes = () => (
