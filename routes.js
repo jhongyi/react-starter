@@ -11,7 +11,7 @@ const routesConfig = [
     name: 'Hello',
     path: '/',
     component: Loadable({
-      loader: () => import('~~components/Hello'),
+      loader: () => import('~~containers/Hello'),
       loading: () => <div>loading...</div>
     }),
     exact: true
@@ -20,7 +20,7 @@ const routesConfig = [
     name: 'Hello',
     path: '/hello',
     component: Loadable({
-      loader: () => import('~~components/Hello'),
+      loader: () => import('~~containers/Hello'),
       loading: () => <div>loading...</div>
     }),
     exact: true

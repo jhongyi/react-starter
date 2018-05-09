@@ -5,7 +5,9 @@ module.exports = {
     alias: {
       '~~components': path.resolve(__dirname, '../src/components'),
       '~~containers': path.resolve(__dirname, '../src/containers'),
+      '~~reducers': path.resolve(__dirname, '../src/reducers'),
       '~~store': path.resolve(__dirname, '../src/store'),
+      '~~middlewares': path.resolve(__dirname, '../src/middlewares'),
     },
     extensions: [".js", ".jsx"]
   }
