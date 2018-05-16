@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 
@@ -15,12 +16,14 @@ class App extends Component {
     /* TODO: RWD */
     return (
       <div>
-        <div>
-          {this.props.children}
-        </div>
+        {this.props.children}
       </div>
     );
   }
 }
 
 export default withRouter(App);
+
+App.propTypes = {
+  children: PropTypes.element.isRequired,
+};
