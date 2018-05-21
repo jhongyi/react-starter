@@ -4,6 +4,7 @@ import { routerMiddleware as createRouterMiddleware } from 'react-router-redux';
 import reducers from '~~reducers';
 
 import middlewares from '~~middlewares';
+import { runSaga } from '~~middlewares/SagaMiddleware';
 
 export default function configureStore(history) {
   // Build the middleware for intercepting and dispatching navigation actions
@@ -23,5 +24,9 @@ export default function configureStore(history) {
       store.replaceReducer(nextRootReducer);
     });
   }
+
+  // 開始執行 saga
+  runSaga();
+
   return store;
 }
