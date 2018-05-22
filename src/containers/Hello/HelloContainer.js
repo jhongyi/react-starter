@@ -14,8 +14,8 @@ import * as HelloActions from './HelloActions';
 )
 
 export default class HelloContainer extends Component {
-  componentWillMount() {
-    this.props.actions.sayHello();
+  async componentWillMount() {
+    await this.props.actions.sayHello();
   }
 
   render() {

@@ -6,7 +6,7 @@ const initialState = {
 };
 
 export default handleActions({
-  [actionTypes.SAY_HELLO]: (state, payload) => {
+  [actionTypes.SAVE_HELLO]: (state, payload) => {
     const { word } = payload;
     return {
       ...state,
