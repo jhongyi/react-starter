@@ -9,8 +9,8 @@ export const actionTypes = {
 function* sayHello() {
   try {
     const word = 'first redux saga msg';
+    // 直接 dispatch action 至 reducer
     yield put({ type: actionTypes.SAVE_HELLO, word });
-    // yield put(HelloActions.saveHello('first redux saga msg'));
   } catch (error) {
     console.log('something went wrong', error);
   }
