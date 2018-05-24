@@ -8,6 +8,7 @@ module.exports = {
       '~~reducers': path.resolve(__dirname, '../src/reducers'),
       '~~store': path.resolve(__dirname, '../src/store'),
       '~~middlewares': path.resolve(__dirname, '../src/middlewares'),
+      '~~sagas': path.resolve(__dirname, '../src/sagas'),
     },
     extensions: [".js", ".jsx"]
   }
