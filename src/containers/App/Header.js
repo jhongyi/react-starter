@@ -44,7 +44,6 @@ class Header extends Component {
             <li><a href="#top" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
             <li><a href="#top" className="icon fa-github"><span className="label">Github</span></a></li>
             <li><a href="#top" className="icon fa-envelope"><span className="label">Email</span></a></li>
-            <button onClick={() => this.activeChooseNav('contact')}>ggg</button>
           </ul>
         </div>
       </HeaderStyle>
