@@ -9,6 +9,7 @@ module.exports = {
       '~~store': path.resolve(__dirname, '../src/store'),
       '~~middlewares': path.resolve(__dirname, '../src/middlewares'),
       '~~sagas': path.resolve(__dirname, '../src/sagas'),
+      '~~static': path.resolve(__dirname, '../src/static'),
     },
     extensions: [".js", ".jsx"]
   }

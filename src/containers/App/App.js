@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import Header from './Header';
-import Main from './Main';
+import Footer from './Footer';
 // @connect(
 //   state => ({
 //     loading: state.spinner.loading,
@@ -17,7 +17,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Main child={this.props.children} />
+        {this.props.children}
+        <Footer />
       </div>
     );
   }

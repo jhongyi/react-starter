@@ -14,9 +14,6 @@ const plugins = (templatePath = 'src/index.html') => {
         "React": "react",
       }),
       new CopyWebpackPlugin([
-        { from: './src/libs/js', to: './libs/js' },
-      ]),
-      new CopyWebpackPlugin([
         { from: './src/fonts', to: './fonts' },
       ])
     ],
