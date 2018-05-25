@@ -8,10 +8,10 @@ import App from '~~containers/App';
 
 const routesConfig = [
   {
-    name: 'Hello',
+    name: 'Home',
     path: '/',
     component: Loadable({
-      loader: () => import('~~containers/Hello'),
+      loader: () => import('~~containers/Home'),
       loading: () => <div>loading...</div>
     }),
     exact: true

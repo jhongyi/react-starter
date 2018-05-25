@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-
-
+import Header from './Header';
+import Main from './Main';
 // @connect(
 //   state => ({
 //     loading: state.spinner.loading,
@@ -16,7 +16,8 @@ class App extends Component {
     /* TODO: RWD */
     return (
       <div>
-        {this.props.children}
+        <Header />
+        <Main child={this.props.children} />
       </div>
     );
   }

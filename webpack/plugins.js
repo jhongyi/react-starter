@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const plugins = (templatePath = 'src/index.html') => {
   return {
@@ -11,7 +12,13 @@ const plugins = (templatePath = 'src/index.html') => {
       }),
       new webpack.ProvidePlugin({
         "React": "react",
-      })
+      }),
+      new CopyWebpackPlugin([
+        { from: './src/libs/js', to: './libs/js' },
+      ]),
+      new CopyWebpackPlugin([
+        { from: './src/fonts', to: './fonts' },
+      ])
     ],
   };
 }
