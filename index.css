@@ -4,8 +4,10 @@ html, body{
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  width: auto;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
   background: #2b2b2b;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 11pt;

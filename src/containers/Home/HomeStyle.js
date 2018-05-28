@@ -8,9 +8,9 @@ const HomeStyle = styled.div`
 
   #banner {
     margin: 0px auto;
-    width: 1200px;
+    // width: 1200px;
     overflow: hidden;
-    width: 1000px;
+    // width: 1000px;
     text-align: center;
     color: rgba(255,255,255,.7);
     font-size: 1.5em;
