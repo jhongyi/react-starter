@@ -12,10 +12,7 @@ const plugins = (templatePath = 'src/index.html') => {
       }),
       new webpack.ProvidePlugin({
         "React": "react",
-      }),
-      new CopyWebpackPlugin([
-        { from: './src/fonts', to: './fonts' },
-      ])
+      })
     ],
   };
 }
